@@ -4,6 +4,7 @@ export default function TrackSearchResult({ track, chooseTrack }) {
   function handlePlay() {
     chooseTrack(track);
   }
+
   return (
     <div
       className="d-flex m-2 align-items-center"
@@ -13,9 +14,9 @@ export default function TrackSearchResult({ track, chooseTrack }) {
       <img
         src={track.albumUrl}
         style={{ height: "64px", width: "64px" }}
-        alt="albumimage"
+        alt="album cover"
       />
-      <div className="m1-3">
+      <div className="ml-3">
         <div>{track.title}</div>
         <div className="text-muted">{track.artist}</div>
       </div>
